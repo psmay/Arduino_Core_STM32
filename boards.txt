@@ -157,6 +157,10 @@ Nucleo_144.menu.upload_method.dfuMethod.upload.protocol=2
 Nucleo_144.menu.upload_method.dfuMethod.upload.options=-g
 Nucleo_144.menu.upload_method.dfuMethod.upload.tool=stm32CubeProg
 
+Nucleo_144.menu.upload_method.STLink=STLink
+Nucleo_144.menu.upload_method.STLink.upload.protocol=STLink
+Nucleo_144.menu.upload_method.STLink.upload.tool=stlink_upload
+
 ################################################################################
 # Nucleo 64 boards
 
@@ -418,6 +422,10 @@ Nucleo_64.menu.upload_method.dfuMethod.upload.protocol=2
 Nucleo_64.menu.upload_method.dfuMethod.upload.options=-g
 Nucleo_64.menu.upload_method.dfuMethod.upload.tool=stm32CubeProg
 
+Nucleo_64.menu.upload_method.STLink=STLink
+Nucleo_64.menu.upload_method.STLink.upload.protocol=STLink
+Nucleo_64.menu.upload_method.STLink.upload.tool=stlink_upload
+
 ################################################################################
 # Nucleo 32 boards
 
@@ -511,6 +519,10 @@ Nucleo_32.menu.upload_method.dfuMethod=STM32CubeProgrammer (DFU)
 Nucleo_32.menu.upload_method.dfuMethod.upload.protocol=2
 Nucleo_32.menu.upload_method.dfuMethod.upload.options=-g
 Nucleo_32.menu.upload_method.dfuMethod.upload.tool=stm32CubeProg
+
+Nucleo_32.menu.upload_method.STLink=STLink
+Nucleo_32.menu.upload_method.STLink.upload.protocol=STLink
+Nucleo_32.menu.upload_method.STLink.upload.tool=stlink_upload
 
 ################################################################################
 # Discovery boards
@@ -630,6 +642,10 @@ Disco.menu.upload_method.dfuMethod.upload.protocol=2
 Disco.menu.upload_method.dfuMethod.upload.options=-g
 Disco.menu.upload_method.dfuMethod.upload.tool=stm32CubeProg
 
+Disco.menu.upload_method.STLink=STLink
+Disco.menu.upload_method.STLink.upload.protocol=STLink
+Disco.menu.upload_method.STLink.upload.tool=stlink_upload
+
 ################################################################################
 # Eval boards
 
@@ -663,6 +679,9 @@ Eval.menu.upload_method.dfuMethod.upload.protocol=2
 Eval.menu.upload_method.dfuMethod.upload.options=-g
 Eval.menu.upload_method.dfuMethod.upload.tool=stm32CubeProg
 
+Eval.menu.upload_method.STLink=STLink
+Eval.menu.upload_method.STLink.upload.protocol=STLink
+Eval.menu.upload_method.STLink.upload.tool=stlink_upload
 
 ################################################################################
 # Other boards
@@ -717,6 +736,14 @@ GenF0.menu.upload_method.dfuMethod=STM32CubeProgrammer (DFU)
 GenF0.menu.upload_method.dfuMethod.upload.protocol=2
 GenF0.menu.upload_method.dfuMethod.upload.options=-g
 GenF0.menu.upload_method.dfuMethod.upload.tool=stm32CubeProg
+
+GenF0.menu.upload_method.STLinkMethod=STLink
+GenF0.menu.upload_method.STLinkMethod.upload.protocol=STLink
+GenF0.menu.upload_method.STLinkMethod.upload.tool=stlink_upload
+
+GenF0.menu.upload_method.serialMethod=Serial
+GenF0.menu.upload_method.serialMethod.upload.protocol=maple_serial
+GenF0.menu.upload_method.serialMethod.upload.tool=serial_upload
 
 ################################################################################
 # Generic F1
@@ -855,6 +882,14 @@ GenF1.menu.upload_method.dfuoMethod.upload.altID=1
 GenF1.menu.upload_method.dfuoMethod.build.flash_offset=0x5000
 GenF1.menu.upload_method.dfuoMethod.build.bootloader_flags=-DBL_LEGACY_LEAF -DVECT_TAB_OFFSET={build.flash_offset}
 
+GenF1.menu.upload_method.STLinkMethod=STLink
+GenF1.menu.upload_method.STLinkMethod.upload.protocol=STLink
+GenF1.menu.upload_method.STLinkMethod.upload.tool=stlink_upload
+
+GenF1.menu.upload_method.serialMethod=Serial
+GenF1.menu.upload_method.serialMethod.upload.protocol=maple_serial
+GenF1.menu.upload_method.serialMethod.upload.tool=serial_upload
+
 ################################################################################
 # Generic F3
 
@@ -896,6 +931,14 @@ GenF3.menu.upload_method.dfuMethod.upload.tool=stm32CubeProg
 GenF3.menu.upload_method.bmpMethod=BMP (Black Magic Probe)
 GenF3.menu.upload_method.bmpMethod.upload.protocol=gdb_bmp
 GenF3.menu.upload_method.bmpMethod.upload.tool=bmp_upload
+
+GenF3.menu.upload_method.STLink=STLink
+GenF3.menu.upload_method.STLink.upload.protocol=STLink
+GenF3.menu.upload_method.STLink.upload.tool=stlink_upload
+
+GenF3.menu.upload_method.serialMethod=Serial
+GenF3.menu.upload_method.serialMethod.upload.protocol=maple_serial
+GenF3.menu.upload_method.serialMethod.upload.tool=serial_upload
 
 ################################################################################
 # Generic F4
@@ -1007,7 +1050,15 @@ GenF4.menu.upload_method.hidMethod=HID Bootloader 2.2
 GenF4.menu.upload_method.hidMethod.upload.protocol=hid22
 GenF4.menu.upload_method.hidMethod.upload.tool=hid_upload
 GenF4.menu.upload_method.hidMethod.build.flash_offset=0x4000
-GenF4.menu.upload_method.hidMethod.build.bootloader_flags=-DBL_HID -DVECT_TAB_OFFSET={build.flash_offset}                                                                                                        
+GenF4.menu.upload_method.hidMethod.build.bootloader_flags=-DBL_HID -DVECT_TAB_OFFSET={build.flash_offset}                            
+
+GenF4.menu.upload_method.STLink=STLink
+GenF4.menu.upload_method.STLink.upload.protocol=STLink
+GenF4.menu.upload_method.STLink.upload.tool=stlink_upload
+
+GenF4.menu.upload_method.serialMethod=Serial
+GenF4.menu.upload_method.serialMethod.upload.protocol=maple_serial
+GenF4.menu.upload_method.serialMethod.upload.tool=serial_upload
 
 ###############################
 # Sparky Flight Controllers
@@ -1046,6 +1097,10 @@ Sparky.menu.upload_method.dfuMethod=STM32CubeProgrammer (DFU)
 Sparky.menu.upload_method.dfuMethod.upload.protocol=2
 Sparky.menu.upload_method.dfuMethod.upload.options=-g
 Sparky.menu.upload_method.dfuMethod.upload.tool=stm32CubeProg
+
+Sparky.menu.upload_method.STLinkMethod=STLink
+Sparky.menu.upload_method.STLinkMethod.upload.protocol=STLink
+Sparky.menu.upload_method.STLinkMethod.upload.tool=stlink_upload
 
 ################################################################################
 # LoRa boards
@@ -1105,6 +1160,14 @@ LoRa.menu.upload_method.dfuMethod=STM32CubeProgrammer (DFU)
 LoRa.menu.upload_method.dfuMethod.upload.protocol=2
 LoRa.menu.upload_method.dfuMethod.upload.options=-g
 LoRa.menu.upload_method.dfuMethod.upload.tool=stm32CubeProg
+
+LoRa.menu.upload_method.STLink=STLink
+LoRa.menu.upload_method.STLink.upload.protocol=STLink
+LoRa.menu.upload_method.STLink.upload.tool=stlink_upload
+
+LoRa.menu.upload_method.serialMethod=Serial
+LoRa.menu.upload_method.serialMethod.upload.protocol=maple_serial
+LoRa.menu.upload_method.serialMethod.upload.tool=serial_upload
 
 ###############################
 # 3D printer boards
@@ -1243,6 +1306,13 @@ LoRa.menu.upload_method.dfuMethod.upload.tool=stm32CubeProg
 3dprinter.menu.upload_method.dfuMethod.upload.options=-g
 3dprinter.menu.upload_method.dfuMethod.upload.tool=stm32CubeProg
 
+3dprinter.menu.upload_method.STLink=STLink
+3dprinter.menu.upload_method.STLink.upload.protocol=STLink
+3dprinter.menu.upload_method.STLink.upload.tool=stlink_upload
+
+3dprinter.menu.upload_method.serialMethod=Serial
+3dprinter.menu.upload_method.serialMethod.upload.protocol=maple_serial
+3dprinter.menu.upload_method.serialMethod.upload.tool=serial_upload
 
 ###############################
 # Genericflight Flight Controllers
@@ -1314,6 +1384,14 @@ Genericflight.menu.upload_method.dfuoMethod.upload.altID=1
 Genericflight.menu.upload_method.dfuoMethod.build.flash_offset=0x5000
 Genericflight.menu.upload_method.dfuoMethod.build.bootloader_flags=-DBL_LEGACY_LEAF -DVECT_TAB_OFFSET={build.flash_offset}
 
+Genericflight.menu.upload_method.STLink=STLink
+Genericflight.menu.upload_method.STLink.upload.protocol=STLink
+Genericflight.menu.upload_method.STLink.upload.tool=stlink_upload
+
+Genericflight.menu.upload_method.serialMethod=Serial
+Genericflight.menu.upload_method.serialMethod.upload.protocol=maple_serial
+Genericflight.menu.upload_method.serialMethod.upload.tool=serial_upload
+
 ################################################################################
 # Midatronics boards
 
@@ -1356,6 +1434,14 @@ Midatronics.menu.upload_method.dfuMethod=STM32CubeProgrammer (DFU)
 Midatronics.menu.upload_method.dfuMethod.upload.protocol=2
 Midatronics.menu.upload_method.dfuMethod.upload.options=-g
 Midatronics.menu.upload_method.dfuMethod.upload.tool=stm32CubeProg
+
+Midatronics.menu.upload_method.STLink=STLink
+Midatronics.menu.upload_method.STLink.upload.protocol=STLink
+Midatronics.menu.upload_method.STLink.upload.tool=stlink_upload
+
+Midatronics.menu.upload_method.serialMethod=Serial
+Midatronics.menu.upload_method.serialMethod.upload.protocol=maple_serial
+Midatronics.menu.upload_method.serialMethod.upload.tool=serial_upload
 
 ################################################################################
 # Serialx activation
